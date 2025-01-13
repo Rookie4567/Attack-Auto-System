@@ -86,7 +86,7 @@ class otomatikav(ui.ScriptWindow):
 			#Toplama
 			self.AutoToplamaButton.append(GetObject("AutoToplamaOnButton"))
 			self.AutoToplamaButton.append(GetObject("AutoToplamaOffButton"))
-			#›KS›R
+			#√ùKS√ùR
 			self.AutoPositionlButton.append(GetObject("AutoPositionlOnButton"))
 			self.AutoPositionlButton.append(GetObject("AutoPositionlOffButton"))
 			#Skiller
@@ -98,7 +98,7 @@ class otomatikav(ui.ScriptWindow):
 			#Tanrilar
 			self.AutoTanrilarButton.append(GetObject("AutoEjderhaOnButton"))
 			self.AutoTanrilarButton.append(GetObject("AutoEjderhaOffButton"))
-			#BAﬁLAT
+			#BA√ûLAT
 			self.AutoStartButton.append(GetObject("AutoStartOnButton"))
 			self.AutoStartButton.append(GetObject("AutoStartOffButton"))
 
@@ -109,16 +109,16 @@ class otomatikav(ui.ScriptWindow):
 			#toplama
 			self.AutoToplamaButton[0].SAFE_SetEvent(self.ClickAutoToplamaOnButton)
 			self.AutoToplamaButton[1].SAFE_SetEvent(self.ClickAutoToplamaOffButton)
-			#›ksir
+			#√ùksir
 			self.AutoPositionlButton[0].SAFE_SetEvent(self.ClickAutoPositionlOnButton)
 			self.AutoPositionlButton[1].SAFE_SetEvent(self.ClickAutoPositionlOffButton)
 			#Skiller
 			self.AutoSkilButton[0].SAFE_SetEvent(self.ClickAutoSkilOnButton)
 			self.AutoSkilButton[1].SAFE_SetEvent(self.ClickAutoSkilOffButton)
-			#Yeniden Dou˛
+			#Yeniden Do√∞u√æ
 			self.AutoYenidenButton[0].SAFE_SetEvent(self.ClickAutoYenidenOnButton)
 			self.AutoYenidenButton[1].SAFE_SetEvent(self.ClickAutoYenidenOffButton)
-			#Tanr˝lar
+			#Tanr√Ωlar
 			self.AutoTanrilarButton[0].SAFE_SetEvent(self.ClickAutoTanrilarOnButton)
 			self.AutoTanrilarButton[1].SAFE_SetEvent(self.ClickAutoTanrilarOffButton)
 			#Start
@@ -136,7 +136,7 @@ class otomatikav(ui.ScriptWindow):
 		self.Close()
 		return TRUE
 
-########################### PELER›N
+########################### PELER√ùN
 	def pelerinystartfunkacja(self):
 		self.pelerinystartfunkacjaczas=czas()
 		self.pelerinystartfunkacjaczas.otwoz(0.5)
@@ -159,7 +159,7 @@ class otomatikav(ui.ScriptWindow):
 			self.pelerinystartfunkacja()
 		else:
 			self.ClickAutoPelerinOffButton()
-			chat.AppendChat(1, "|cFF00FF00|H|h[Sistem] : Bu ÷zellii Otomatik Av Ba˛latmadan Kullanamass˝n !")
+			chat.AppendChat(1, "|cFF00FF00|H|h[Sistem] : Bu √ñzelli√∞i Otomatik Av Ba√ælatmadan Kullanamass√Ωn !")
 
 	def ClickAutoPelerinOffButton(self):
 		ahmetatalayInfo.Pelerin = 0
@@ -173,7 +173,7 @@ class otomatikav(ui.ScriptWindow):
 		else:
 			self.AutoPelerinButton[0].SetUp()
 			self.AutoPelerinButton[1].Down()
-########################### PELER›N
+########################### PELER√ùN
 
 ########################### TOPLAMA
 	def ClickAutoToplamaOnButton(self):
@@ -183,7 +183,7 @@ class otomatikav(ui.ScriptWindow):
 			player.PickCloseItem()
 		else:
 			self.ClickAutoToplamaOffButton()
-			chat.AppendChat(1, "|cFF00FF00|H|h[Sistem] : Bu ÷zellii Otomatik Av Ba˛latmadan Kullanamass˝n !")
+			chat.AppendChat(1, "|cFF00FF00|H|h[Sistem] : Bu √ñzelli√∞i Otomatik Av Ba√ælatmadan Kullanamass√Ωn !")
 
 	def ClickAutoToplamaOffButton(self):
 		ahmetatalayInfo.Toplama = 0
@@ -198,7 +198,7 @@ class otomatikav(ui.ScriptWindow):
 			self.AutoToplamaButton[1].Down()
 ########################### TOPLAMA
 
-########################### ›KS›R
+########################### √ùKS√ùR
 
 	def autopotystartfunkacja(self):
 			self.autopotystartfunkacjaczas=czas()
@@ -233,7 +233,7 @@ class otomatikav(ui.ScriptWindow):
 			self.IksirRefreshShow()
 		else:
 			self.ClickAutoPositionlOffButton()
-			chat.AppendChat(1, "|cFF00FF00|H|h[Sistem] : Bu ÷zellii Otomatik Av Ba˛latmadan Kullanamass˝n !")
+			chat.AppendChat(1, "|cFF00FF00|H|h[Sistem] : Bu √ñzelli√∞i Otomatik Av Ba√ælatmadan Kullanamass√Ωn !")
 
 	def ClickAutoPositionlOffButton(self):
 		ahmetatalayInfo.Iksir = 0
@@ -248,7 +248,7 @@ class otomatikav(ui.ScriptWindow):
 			self.AutoPositionlButton[0].SetUp()
 			self.AutoPositionlButton[1].Down()
 
-########################### ›KS›R
+########################### √ùKS√ùR
 
 ########################### Skill
 	def ClickAutoSkilOnButton(self):
@@ -265,7 +265,7 @@ class otomatikav(ui.ScriptWindow):
 			player.ClickSkillSlot(8)
 		else:
 			self.ClickAutoSkilOffButton()
-			chat.AppendChat(1, "|cFF00FF00|H|h[Sistem] : Bu ÷zellii Otomatik Av Ba˛latmadan Kullanamass˝n !")
+			chat.AppendChat(1, "|cFF00FF00|H|h[Sistem] : Bu √ñzelli√∞i Otomatik Av Ba√ælatmadan Kullanamass√Ωn !")
 
 	def ClickAutoSkilOffButton(self):
 		ahmetatalayInfo.Skill = 0
@@ -280,7 +280,7 @@ class otomatikav(ui.ScriptWindow):
 			self.AutoSkilButton[1].Down()
 ########################### Skill
 
-########################### Yeniden Dou˛
+########################### Yeniden Do√∞u√æ
 
 	def autorestartstartfunkcja(self):
 		self.autorestartstartfunkcjaczas=czas()
@@ -304,7 +304,7 @@ class otomatikav(ui.ScriptWindow):
 			self.autorestartstartfunkcja()
 		else:
 			self.ClickAutoYenidenOffButton()
-			chat.AppendChat(1, "|cFF00FF00|H|h[Sistem] : Bu ÷zellii Otomatik Av Ba˛latmadan Kullanamass˝n !")
+			chat.AppendChat(1, "|cFF00FF00|H|h[Sistem] : Bu √ñzelli√∞i Otomatik Av Ba√ælatmadan Kullanamass√Ωn !")
 
 	def ClickAutoYenidenOffButton(self):
 		ahmetatalayInfo.YenidenDogus = 0
@@ -318,9 +318,9 @@ class otomatikav(ui.ScriptWindow):
 		else:
 			self.AutoYenidenButton[0].SetUp()
 			self.AutoYenidenButton[1].Down()
-########################### Yeniden Dou˛
+########################### Yeniden Do√∞u√æ
 
-########################### Tanr˝lar
+########################### Tanr√Ωlar
 
 	def dopalaczestartfunkcja(self):
 		global tanrisure
@@ -348,7 +348,7 @@ class otomatikav(ui.ScriptWindow):
 			self.dopalaczestartfunkcja()
 		else:
 			self.ClickAutoTanrilarOffButton()
-			chat.AppendChat(1, "|cFF00FF00|H|h[Sistem] : Bu ÷zellii Otomatik Av Ba˛latmadan Kullanamass˝n !")
+			chat.AppendChat(1, "|cFF00FF00|H|h[Sistem] : Bu √ñzelli√∞i Otomatik Av Ba√ælatmadan Kullanamass√Ωn !")
 
 	def ClickAutoTanrilarOffButton(self):
 		ahmetatalayInfo.Tanrilar = 0
@@ -362,9 +362,9 @@ class otomatikav(ui.ScriptWindow):
 		else:
 			self.AutoTanrilarButton[0].SetUp()
 			self.AutoTanrilarButton[1].Down()
-########################### Tanr˝lar
+########################### Tanr√Ωlar
 
-########################### BAﬁLAT
+########################### BA√ûLAT
 	def lvlbotstartfunkcja(self):
 		global dokoftowaniewida
 		self.lvlbotstartfunkcjaczas=czas()
@@ -438,7 +438,7 @@ class otomatikav(ui.ScriptWindow):
 		else:
 			self.AutoStartButton[0].SetUp()
 			self.AutoStartButton[1].Down()
-########################### BAﬁLAT
+########################### BA√ûLAT
 
 class czas(ui.ScriptWindow):
 
